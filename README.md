@@ -44,7 +44,7 @@ Example Playbook
     editor_packages: true
 
   roles:
-    - role: ivoamorim.logrotate
+    - role: ivoamorim.sysadmin
 ```
 
 License
