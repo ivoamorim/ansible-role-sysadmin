@@ -1,0 +1,6 @@
+---
+resource_monitor_packages: true
+network_monitor_packages: true
+terminal_packages: true
+shell_packages: true
+editor_packages: true

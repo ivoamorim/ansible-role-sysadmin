@@ -1,0 +1,22 @@
+---
+galaxy_info:
+  role_name: sysadmin
+  author: Ivo Amorim
+  description: Install sysadmin utils packages
+  license: "BSD"
+  min_ansible_version: 1.0
+  platforms:
+    - name: centos
+      versions:
+        - 7
+    - name: debian
+      versions:
+        - 9
+    - name: ubuntu
+      versions:
+        - 1804
+  galaxy_tags:
+    - networking
+    - system
+    - security
+dependencies: []

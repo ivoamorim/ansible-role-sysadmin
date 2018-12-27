@@ -1,0 +1,24 @@
+---
+resource_monitor_packages:
+  - sysstat
+  - dstat
+  - lsof
+  - htop
+  - iotop
+  - powertop
+
+network_monitor_packages:
+  - tcpdump
+  - nmap
+  - netcat-traditional
+
+terminal_packages:
+  - tmux
+
+shell_packages:
+  - bash-completion
+  - zsh
+
+editor_packages:
+  - emacs-nox
+  - vim

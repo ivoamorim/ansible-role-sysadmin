@@ -1,0 +1,38 @@
+---
+- name: Include OS-specific variables.
+  include_vars: "{{ ansible_os_family }}.yml"
+
+- name: Install Resource Monitor tools
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ resource_monitor_packages }}"
+  when: resource_monitor_packages
+
+- name: Install Network Monitor tools
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ network_monitor_packages }}"
+  when: network_monitor_packages
+
+- name: Install Terminal
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ terminal_packages }}"
+  when: terminal_packages
+
+- name: Install Shell
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ shell_packages }}"
+  when: shell_packages
+
+- name: Install Editor
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ editor_packages }}"
+  when: editor_packages
